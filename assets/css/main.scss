@@ -1,0 +1,12 @@
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+
+
+// customize styles
+.navbar-brand {
+  .navbar-item:hover {
+    color: $grey-dark;
+  }
+}
+
+@import '~bulma';
