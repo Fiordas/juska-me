@@ -39,14 +39,9 @@ module.exports = {
    ** Global CSS
    */
   css: [{
-      src: '~/assets/css/main.scss',
-      lang: 'scss'
-    },
-    {
-      src: 'font-awesome/scss/font-awesome.scss',
-      lang: 'scss'
-    }
-  ],
+    src: '~/assets/css/main.scss',
+    lang: 'scss'
+  }],
 
   /*
    ** Plugins to load before mounting the App
@@ -56,7 +51,20 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [{
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        }
+        // {
+        //   set: '@fortawesome/fontawesome-free-brands',
+        //   icons: ['faCodepen']
+        // }
+      ]
+    }]
+  ],
 
   /*
    ** Build configuration
