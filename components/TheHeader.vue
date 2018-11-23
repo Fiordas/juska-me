@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-transparent has-shadow">
+  <nav class="navbar has-shadow">
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link to="/" class="logo-text navbar-item">Simonas
@@ -23,12 +23,13 @@
 </template>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Kanit:700");
+
 .logo-text {
+  font-family: "Kanit", sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
 }
 .logo-color {
   color: rgb(81, 86, 172);
 }
 </style>
-
