@@ -3,6 +3,7 @@
     <TheLanding />
     <TheAbout />
     <TheSkills />
+    <TheWork />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import TheLanding from '@/components/TheLanding'
 import TheAbout from '@/components/TheAbout'
 import TheSkills from '@/components/TheSkills'
+import TheWork from '@/components/TheWork'
 
 export default {
   components: {
     TheLanding,
     TheAbout,
-    TheSkills
+    TheSkills,
+    TheWork,
   }
 }
 </script>
