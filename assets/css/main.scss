@@ -2,13 +2,14 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
-$primary:rgb(81, 86, 172);
+$primary: rgb(81, 86, 172);
 
 $button-border-width: 2px;
 $input-shadow: inset 0 0 0 rgba($black, 0.1);
 $input-focus-border-color: $primary;
 $input-focus-box-shadow-color: $primary;
 $input-focus-box-shadow-size: 0 0 0 0.07em;
+$card-shadow: 0 3px 10px rgba($black, 0.2), 0 0 0 1px rgba($black, 0.1);
 
 // customize styles
 .navbar-brand {
@@ -18,8 +19,7 @@ $input-focus-box-shadow-size: 0 0 0 0.07em;
 }
 
 // New variables
-$family-heading: 'Mukta',
-sans-serif;
+$family-heading: 'Mukta', sans-serif;
 
 @import '~bulma';
 
