@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-medium">
-    <div class="hero-header">
+    <div class="hero-header" id="work">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-three-quarters has-text-centered">
@@ -13,11 +13,8 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-4">
-            <WorkCard />
-          </div>
-          <div class="column is-4">
-            <WorkCard />
+          <div class="column is-4" v-for="(project, i) in projects" :key="i">
+            <WorkCard :project="project" />
           </div>
         </div>
       </div>
@@ -27,17 +24,23 @@
 
 <script>
 import WorkCard from '@/components/WorkCard'
+import projects from '~/static/projects.json'
 
 export default {
   components: {
     WorkCard
+  },
+  data() {
+    return {
+      projects
+    }
   }
 }
 </script>
 
 <style scoped>
 .hero.is-medium .hero-header {
-  padding-top: 9rem;
+  padding-top: 12rem;
 }
 .hero.is-medium .hero-body {
   padding-top: 4rem;
