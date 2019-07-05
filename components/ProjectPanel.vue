@@ -1,27 +1,25 @@
 <template>
   <div class="box">
     <div class="content">
-      <h2 class="title is-4">Quick Summary</h2>
+      <h2 class="title is-4">Project Overview</h2>
       <hr />
-      <p>
-        <strong>Source:</strong>
-        <a :href="source" target="_blank">GitHub</a>
-      </p>
-      <p>
-        <strong>Type:</strong>
-        {{type}}
-      </p>
-      <p>
-        <strong>Status:</strong>
-        {{status}}
-      </p>
-      <p>
-        <strong>Contributors:</strong>
-        {{contributors}}
-      </p>
-      <p>
-        <strong>Technology Stack:</strong>
-      </p>
+      <div class="columns is-mobile">
+        <div class="column is-uppercase label">
+          <p>Source</p>
+          <p>Type</p>
+          <p>Status</p>
+          <p>Contributors</p>
+        </div>
+        <div class="column">
+          <p>
+            <a :href="source" target="_blank">GitHub</a>
+          </p>
+          <p>{{type}}</p>
+          <p>{{status}}</p>
+          <p>{{contributors}}</p>
+        </div>
+      </div>
+      <p class="label">Technology Stack:</p>
       <div class="tags">
         <span class="tag is-primary" v-for="tech in stack" :key="tech">{{tech}}</span>
       </div>
@@ -60,6 +58,7 @@ export default {
 <style scoped>
 p {
   line-height: 1rem;
+  font-size: 14px;
 }
 </style>
 

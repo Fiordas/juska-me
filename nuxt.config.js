@@ -1,14 +1,15 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
    ** Headers of the page
    */
   head: {
     title: pkg.name,
-    meta: [{
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
@@ -21,11 +22,13 @@ module.exports = {
         content: pkg.description
       }
     ],
-    link: [{
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/favicon.ico'
-    }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ]
   },
 
   /*
@@ -38,32 +41,40 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [{
-    src: '~/assets/css/main.scss',
-    lang: 'scss'
-  }],
+  css: [
+    {
+      src: '~/assets/css/main.scss',
+      lang: 'scss'
+    },
+  ],
+
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/aos.js'],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
-    ['nuxt-fontawesome', {
-      component: 'fa',
-      imports: [{
-          set: '@fortawesome/free-solid-svg-icons',
-          icons: ['fas']
-        }
-        // {
-        //   set: '@fortawesome/fontawesome-free-brands',
-        //   icons: ['faCodepen']
-        // }
-      ]
-    }]
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/fontawesome-free-brands',
+            icons: ['faGithub', 'faLinkedin']
+          }
+        ]
+      }
+    ],
+    'vue-scrollto/nuxt'
   ],
 
   /*

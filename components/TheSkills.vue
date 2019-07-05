@@ -1,8 +1,10 @@
 <template>
-  <section class="section has-text-centered">
-    <div class="container">
-      <div class="columns is-centered">
-        <SkillColumn v-for="(skill, i) in skillData" :key="i" :icon="skill.icon" :title="skill.title" :tags="skill.tags" />
+  <section class="hero is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered mobile-padding">
+          <SkillColumn v-for="(skill, i) in skillData" :key="i" :icon="skill.icon" :title="skill.title" :tags="skill.tags" data-aos="fade-up" data-aos-duration="800" :data-aos-delay="300 * i" />
+        </div>
       </div>
     </div>
   </section>
@@ -17,21 +19,23 @@ export default {
   },
   data() {
     return {
-      skillData: [{
-        icon: 'hammer',
-        title: 'Tools',
-        tags: ['VS Code', 'npm', 'Node.js', 'GitHub']
-      },
-      {
-        icon: 'code',
-        title: 'Languages',
-        tags: ['JavaScript (ES6)', 'HTML', 'CSS', 'SASS']
-      },
-      {
-        icon: 'vector-square',
-        title: 'Frameworks',
-        tags: ['Vue.js', 'Nuxt.js', 'Bulma', 'Express.js']
-      }]
+      skillData: [
+        {
+          icon: 'hammer',
+          title: 'Tools',
+          tags: ['VS Code', 'npm', 'Node.js', 'GitHub']
+        },
+        {
+          icon: 'code',
+          title: 'Languages',
+          tags: ['JavaScript (ES6)', 'HTML', 'CSS', 'SASS']
+        },
+        {
+          icon: 'vector-square',
+          title: 'Frameworks',
+          tags: ['Vue.js', 'Nuxt.js', 'Bulma', 'Express.js']
+        }
+      ]
     }
   }
 }
@@ -40,6 +44,6 @@ export default {
 
 <style scoped>
 section {
-  margin-top: -10rem;
+  margin-top: -20rem;
 }
 </style>

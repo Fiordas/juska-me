@@ -3,7 +3,7 @@
     <div class="hero-header" id="work">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-three-quarters has-text-centered">
+          <div class="column is-three-quarters has-text-centered" data-aos="fade-left" data-aos-duration="1500">
             <h1 class="title is-spaced">My Latest Work</h1>
             <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           </div>
@@ -13,9 +13,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-4" v-for="(project, i) in projects" :key="i">
-            <WorkCard :project="project" />
-          </div>
+          <WorkCard v-for="(project, i) in projects" :key="i" :project="project" data-aos="zoom-in" data-aos-duration="1000" />
         </div>
       </div>
     </div>

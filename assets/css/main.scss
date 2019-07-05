@@ -10,6 +10,9 @@ $input-focus-border-color: $primary;
 $input-focus-box-shadow-color: $primary;
 $input-focus-box-shadow-size: 0 0 0 0.07em;
 $card-shadow: 0 3px 10px rgba($black, 0.2), 0 0 0 1px rgba($black, 0.1);
+$navbar-item-hover-background-color: none;
+$navbar-item-hover-color: $primary;
+$navbar-breakpoint: 600px;
 
 // customize styles
 .navbar-brand {
@@ -29,4 +32,10 @@ $family-heading: 'Mukta', sans-serif;
 
 .title {
   @extend %heading;
+}
+
+@include mobile {
+  .mobile-padding {
+    padding-top: 9rem;
+  }
 }

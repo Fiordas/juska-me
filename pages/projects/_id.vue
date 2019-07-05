@@ -51,7 +51,7 @@ export default {
 
 <style scoped>
 section {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
 </style>

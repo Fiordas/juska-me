@@ -6,9 +6,7 @@
       </span>
       <h2 class="title is-4">{{title}}</h2>
       <div class="tags is-centered">
-        <span class="tag" v-for="(tag, i) in tags" :key="i">
-          {{ tag }}
-        </span>
+        <span class="tag is-primary" v-for="(tag, i) in tags" :key="i">{{ tag }}</span>
       </div>
     </div>
   </div>
@@ -29,7 +27,7 @@ export default {
       type: Array,
       required: true
     }
-  },
+  }
 }
 </script>
 

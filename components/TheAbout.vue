@@ -1,9 +1,9 @@
 <template>
-  <section class="hero is-medium is-primary is-bold">
+  <section class="hero is-medium is-primary is-bold" id="about">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-three-quarters has-text-centered">
+          <div class="column is-three-quarters has-text-centered" data-aos="fade-right" data-aos-duration="1500">
             <h1 class="title is-spaced">About Me</h1>
             <h2 class="subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -20,7 +20,8 @@
 
 <style scoped>
 section {
-  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 @media only screen and (max-width: 768px) {
   section {
