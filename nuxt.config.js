@@ -74,6 +74,7 @@ module.exports = {
         ]
       }
     ],
+    '@nuxtjs/axios',
     'vue-scrollto/nuxt'
   ],
 
