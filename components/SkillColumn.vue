@@ -40,4 +40,7 @@ export default {
 h2 {
   padding-top: 1rem;
 }
+.tags {
+  padding: 0 3rem;
+}
 </style>

@@ -6,10 +6,9 @@
           <div class="column is-three-quarters has-text-centered" data-aos="fade-right" data-aos-duration="1500">
             <h1 class="title is-spaced">About Me</h1>
             <h2 class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I developed passion for web technologies during the years of my studies in Applied Informatics.
+              Starting with simple websites I gradually learned new technologies and ways to create advanced applications.
+              Nowadays I primarily work with single page applications to create modern and responsive interfaces.
             </h2>
           </div>
         </div>

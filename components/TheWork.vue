@@ -1,17 +1,14 @@
 <template>
-  <section class="hero is-medium">
-    <div class="hero-header" id="work">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-three-quarters has-text-centered" data-aos="fade-left" data-aos-duration="1500">
-            <h1 class="title is-spaced">My Latest Work</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="hero is-medium" id="work">
     <div class="hero-body">
       <div class="container">
+        <div class="columns is-centered animation-overflow">
+          <div class="column is-three-quarters has-text-centered" data-aos="fade-left" data-aos-duration="1500">
+            <h1 class="title is-spaced">My Latest Work</h1>
+            <h2 class="subtitle">I have worked on several individual and collaborative projects. Check them out below.</h2>
+          </div>
+        </div>
+        <br />
         <div class="columns is-centered">
           <WorkCard v-for="(project, i) in projects" :key="i" :project="project" data-aos="zoom-in" data-aos-duration="1000" />
         </div>
@@ -37,11 +34,12 @@ export default {
 </script>
 
 <style scoped>
-.hero.is-medium .hero-header {
-  padding-top: 12rem;
-}
-.hero.is-medium .hero-body {
+section {
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.animation-overflow {
+  overflow: hidden;
 }
 </style>
 

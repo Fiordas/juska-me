@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered mobile-padding">
-          <SkillColumn v-for="(skill, i) in skillData" :key="i" :icon="skill.icon" :title="skill.title" :tags="skill.tags" data-aos="fade-up" data-aos-duration="800" :data-aos-delay="300 * i" />
+          <SkillColumn v-for="(skill, i) in skillData" :key="i" :icon="skill.icon" :title="skill.title" :tags="skill.tags" data-aos="fade-up" data-aos-duration="800" :data-aos-delay="150 * i" />
         </div>
       </div>
     </div>
@@ -23,17 +23,33 @@ export default {
         {
           icon: 'hammer',
           title: 'Tools',
-          tags: ['VS Code', 'npm', 'Node.js', 'GitHub']
+          tags: [
+            'VS Code',
+            'npm',
+            'MongoDB',
+            'MySQL',
+            'Firebase',
+            'AJAX',
+            'REST',
+            'Git'
+          ]
         },
         {
           icon: 'code',
           title: 'Languages',
-          tags: ['JavaScript (ES6)', 'HTML', 'CSS', 'SASS']
+          tags: ['HTML', 'CSS', 'SASS', 'JavaScript (ES6)', 'SQL']
         },
         {
           icon: 'vector-square',
           title: 'Frameworks',
-          tags: ['Vue.js', 'Nuxt.js', 'Bulma', 'Express.js']
+          tags: [
+            'Vue.js',
+            'Nuxt.js',
+            'Express.js',
+            'Node.js',
+            'Bulma',
+            'Bootstrap'
+          ]
         }
       ]
     }

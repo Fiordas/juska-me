@@ -9,9 +9,9 @@
           <div class="column">
             <ProjectPanel
               :source="projects[$route.params.id].source"
-              :type="projects[$route.params.id].type"
               :status="projects[$route.params.id].status"
-              :contributors="projects[$route.params.id].contributors"
+              :type="projects[$route.params.id].type"
+              :effort="projects[$route.params.id].effort"
               :stack="projects[$route.params.id].stack"
             />
           </div>
@@ -19,7 +19,7 @@
         <div class="columns">
           <div class="column is-9">
             <h1 class="title is-spaced">{{ projects[$route.params.id].title }}</h1>
-            <p>{{ projects[$route.params.id].description }}</p>
+            <div class="content" v-html="projects[$route.params.id].description"></div>
           </div>
         </div>
       </div>

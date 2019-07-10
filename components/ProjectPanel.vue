@@ -6,17 +6,17 @@
       <div class="columns is-mobile">
         <div class="column is-uppercase label">
           <p>Source</p>
-          <p>Type</p>
           <p>Status</p>
-          <p>Contributors</p>
+          <p>Type</p>
+          <p>Effort</p>
         </div>
         <div class="column">
           <p>
-            <a :href="source" target="_blank">GitHub</a>
+            <a :href="source" target="_blank" rel="noopener">GitHub</a>
           </p>
-          <p>{{type}}</p>
           <p>{{status}}</p>
-          <p>{{contributors}}</p>
+          <p>{{type}}</p>
+          <p>{{effort}}</p>
         </div>
       </div>
       <p class="label">Technology Stack:</p>
@@ -42,9 +42,9 @@ export default {
       type: String,
       default: ''
     },
-    contributors: {
+    effort: {
       type: String,
-      required: true
+      default: ''
     },
     stack: {
       type: Array,

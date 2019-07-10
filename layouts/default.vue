@@ -17,7 +17,10 @@ export default {
   },
   head() {
     return {
-      title: 'Simonas Juska | Front-End Developer'
+      title: 'Simonas Juska | Front-End Developer',
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   }
 }

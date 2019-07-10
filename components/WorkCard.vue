@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-image">
         <figure class="image is-16by9">
-          <img :src="require(`@/assets/images/${project.id}/${project.logo}`)" alt="Placeholder image" />
+          <img :src="require(`@/assets/images/${project.id}/${project.logo}`)" alt="Project image" />
         </figure>
       </div>
       <div class="card-content">
@@ -14,9 +14,9 @@
         </div>
         <div class="content has-text-centered">{{project.summary}}</div>
       </div>
-      <footer class="card-footer">
-        <nuxt-link :to="`/projects/${project.id}`" class="card-footer-item">Read More</nuxt-link>
-        <a :href="project.source" target="_blank" class="card-footer-item">GitHub</a>
+      <footer class="card-footer is-uppercase">
+        <nuxt-link :to="`/projects/${project.id}`" class="card-footer-item has-text-primary">Read More</nuxt-link>
+        <a :href="project.source" target="_blank" rel="noopener" class="card-footer-item has-text-primary">View Code</a>
       </footer>
     </div>
   </div>
@@ -36,6 +36,11 @@ export default {
 <style scoped>
 .card {
   border-radius: 2%;
+}
+
+.card-footer-item {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 img {

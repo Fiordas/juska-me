@@ -36,7 +36,7 @@
         </div>
         <div class="navbar-end" v-else>
           <div class="navbar-item">
-            <button @click="$router.go(-1)" class="button is-primary is-outlined">
+            <button @click="$router.go(-1); isBurger ? isBurger = !isBurger: null" class="button is-primary is-outlined">
               <span class="icon is-medium">
                 <fa :icon="['fas', 'undo']" />
               </span>
@@ -61,8 +61,6 @@ export default {
 
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Kanit:700');
-
 .logo-text {
   font-family: 'Kanit', sans-serif;
   font-size: 1.5rem;
