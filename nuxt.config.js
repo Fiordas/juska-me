@@ -46,8 +46,13 @@ module.exports = {
       src: '~/assets/css/main.scss',
       lang: 'scss'
     },
+    {
+      src: '~/assets/css/transition.css',
+      lang: 'css'
+    }
   ],
 
+  pageTransition: 'fade',
 
   /*
    ** Plugins to load before mounting the App
