@@ -1,28 +1,28 @@
 {
-  "test": {
-    "id": "test",
-    "title": "Test Project",
-    "logo": "pic.png",
-    "images": ["pic.png", "pic2.png"],
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "source": "https://github.com/Fiordas/juska-me",
-    "type": "Personal project",
-    "status": "Unfinished",
-    "contributors": "Simonas Juska",
+  "squad-lietuva": {
+    "id": "squad-lietuva",
+    "title": "Squad Lietuva",
+    "logo": "landing.jpg",
+    "images": ["landing.jpg", "signup.jpg", "signin.jpg", "dropdown.jpg", "profile.jpg", "profileinfo.jpg", "changemail.jpg", "editnews.jpg", "addnews.jpg"],
+    "summary": "Side project to create Lithuanian community website for the videogame \"Squad\".",
+    "description": "<p>This is a work-in-progress side project I have been developing on my spare time individually. The aim is to create a fully custom community website for Lithuanians that would be an online hub for news and events related to videogame \"Squad\". Currently it features:</p><ul><li>Custom authentication system and session management based on Firebase authentication through REST API calls.</li><li>User profile information and picture storing within Firebase database and storage respectively.</li><li>News article management system that currently allows to create new and see existing articles.</li></ul><p>Core technologies used:</p><ul><li>Vue.js - user interface building and single page application rendering.</li><li>Nuxt.js - server side rendering and project structure.</li><li>Bulma - element styling and responsiveness.</li><li>Firebase - authentication, database and storage through REST API calls.</li></ul>",
+    "source": "https://github.com/Fiordas/squad-lietuva",
+    "status": "In development",
+    "type": "Side Project",
+    "effort": "Individual",
     "stack": ["Vue.js", "Nuxt.js", "Bulma", "Firebase"]
   },
-  "test2": {
-    "id": "test2",
-    "title": "Test2 Project",
-    "logo": "pic.png",
-    "images": ["pic.png", "pic2.png"],
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "source": "https://github.com/Fiordas/juska-me",
-    "type": "Personal project",
-    "status": "Unfinished",
-    "contributors": "Simonas Juska",
-    "stack": ["Vue.js", "Nuxt.js", "Bulma", "Firebase"]
+  "secure-sneakers": {
+    "id": "secure-sneakers",
+    "title": "Secure Sneakers",
+    "logo": "landing.jpg",
+    "images": ["landing.jpg", "products.jpg", "details.jpg", "filtered.jpg", "cart.jpg", "checkout.jpg", "signup.jpg", "signin.jpg", "admin.jpg", "addproduct.jpg", "editproduct.jpg"],
+    "summary": "Prototype e-commerce website made in collaboration with fellow students as a class project.",
+    "description": "<p>For this project I have worked alongside four other classmates to make a prototype e-commerce website that sells various sneakers online. Made as a class project for university, it features:</p><ul><li>Custom authentication system and session management with high regard to security.</li><li>Content management system for authorized users to add, edit or delete products.</li><li>Shop page displaying available products with the ability to filter through them smoothly.</li><li>Shopping cart system that allows to add and remove products.</li><li>Checkout page that shows products selected and total amount to pay.</li></ul><p>Core technologies used:</p><ul><li>Vue.js - user interface building and single page application rendering.</li><li>Bulma - element styling and responsiveness.</li><li>Express.js - REST API calls to the database.</li><li>MongoDB - data storage and querying.</li></ul>",
+    "source": "https://github.com/Fiordas/secure-sneakers",
+    "status": "Complete",
+    "type": "School Project",
+    "effort": "Team",
+    "stack": ["Vue.js", "Bulma", "Node.js", "Express.js", "MongoDB"]
   }
 }
