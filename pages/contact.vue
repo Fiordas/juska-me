@@ -63,6 +63,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -83,15 +85,21 @@ export default {
       data.append('email', this.email)
       data.append('message', this.message)
 
-      return this.$axios
-        .$post(
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios
+        .post(
           'https://script.google.com/macros/s/AKfycbyNMWt9_syVjBiWclXniqVSzs2PO4HVt-r-nc9t2CObsKN8nrJ9/exec',
-          data
+          data,
+          axiosConfig
         )
         .then(response => {
-          this.isLoading = false
-          if (response.result == 'success') this.isSent = true
+          if (response.data.result == 'success') this.isSent = true
           else this.isSent = false
+        })
+        .catch(() => {
+          this.isSent = false
         })
     }
   }
