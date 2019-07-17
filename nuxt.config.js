@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
    ** Headers of the page
@@ -53,6 +53,10 @@ module.exports = {
     {
       src: '~/assets/css/transition.css',
       lang: 'css'
+    },
+    {
+      src: 'swiper/dist/css/swiper.css',
+      lang: 'css'
     }
   ],
 
@@ -61,7 +65,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/aos.js'],
+  plugins: [{ src: '~/plugins/aos.js', mode: 'client' }, { src: '~/plugins/vue-awesome-swiper.js', mode: 'client' }],
 
   /*
    ** Nuxt.js modules
@@ -83,7 +87,6 @@ module.exports = {
         ]
       }
     ],
-    '@nuxtjs/axios',
     'vue-scrollto/nuxt'
   ],
 
@@ -101,5 +104,8 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+  },
+  generate: {
+    routes: ['/projects/secure-sneakers', '/projects/squad-lietuva']
   }
 }
