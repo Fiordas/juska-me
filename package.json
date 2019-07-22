@@ -1,7 +1,7 @@
 {
   "name": "juska-me",
   "version": "1.0.0",
-  "description": "Personal website",
+  "description": "Personal website and portfolio of Simonas Juska - a frontend developer.",
   "author": "Simonas Juska",
   "private": true,
   "scripts": {
@@ -29,7 +29,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
+    "eslint-loader": "^2.2.1",
     "eslint-plugin-vue": "^4.0.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
