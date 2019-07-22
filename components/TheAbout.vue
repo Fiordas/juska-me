@@ -8,7 +8,7 @@
             <h2 class="subtitle">
               I developed passion for web technologies during the years of my studies in Applied Informatics.
               Starting with simple websites I gradually learned new technologies and ways to create advanced applications.
-              Nowadays I primarily work with single page applications to create modern and responsive interfaces.
+              Nowadays I primarily work with single page applications creating modern looking and responsive interfaces.
             </h2>
           </div>
         </div>
