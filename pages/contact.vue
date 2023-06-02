@@ -85,22 +85,25 @@ export default {
       data.append('email', this.email)
       data.append('message', this.message)
 
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      axios
-        .post(
-          'https://script.google.com/macros/s/AKfycbyNMWt9_syVjBiWclXniqVSzs2PO4HVt-r-nc9t2CObsKN8nrJ9/exec',
-          data,
-          axiosConfig
-        )
-        .then(response => {
-          if (response.data.result == 'success') this.isSent = true
+      fetch(
+        'https://script.google.com/macros/s/AKfycbyNMWt9_syVjBiWclXniqVSzs2PO4HVt-r-nc9t2CObsKN8nrJ9/exec',
+        {
+          method: 'POST',
+          body: data,
+          header: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          mode: 'no-cors'
+        }
+      )
+        .then(async (result) => {
+          const response = await result.json()
+
+          if (response.result == 'success') this.isSent = true
           else this.isSent = false
         })
         .catch(() => {
           this.isSent = false
         })
+        .finally(() => this.isLoading = false)
     }
   }
 }
